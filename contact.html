@@ -24,7 +24,7 @@
 <body>
   <div class="container">
     <!-- header -->
-    <header>
+    <header class="header">
       <nav class="header_nav">
         <ul class="header_ul">
           <li class="header_li">
@@ -93,16 +93,16 @@
         <article class="Form_article">
          
 
-          <form action="" name="form1">
+          <form action=""  class="registration-form" name="form1">
             <div class="form_div1">
-              <input type="text" name="fullname" placeholder="Full Name" />
+              <input type="text"  id="fname"  name="fname" placeholder="Full Name" />
 
-              <input type="email" name="email" placeholder="Email" />
+              <input type="email"  id="email" name="email" placeholder="Email" />
             </div>
 
-            <textarea name="Message" id="" placeholder="Message"></textarea>
+            <textarea  class="text-area" name="Message" id="" placeholder="Message"></textarea>
 
-            <button class="form_button" type="submit">SEND MESSAGE</button>
+            <button class="submit" type="submit">SEND MESSAGE</button>
           </form>
         </article>
 
@@ -157,6 +157,6 @@
           </article>
         </footer>
   </div>
-    <script src="script.js"></script>
+  <script type="module" src="js/main.js"></script>
 </body>
 </html>

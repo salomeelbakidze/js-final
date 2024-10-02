@@ -16,6 +16,8 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="path-to-the-file/splide.min.css">
+
     <link rel="stylesheet" href="css/laptop.css" />
     <link rel="stylesheet" href="css/tablet.css" />
     <link rel="stylesheet" href="css/mobile.css" />
@@ -23,7 +25,7 @@
   <body>
     <div class="container">
       <!-- header -->
-      <header>
+      <header class="header">
 
         <i class="fa-solid fa-bars"></i>
         <i class="fa-solid fa-xmark"></i>
@@ -117,6 +119,39 @@
         </section>
         </section>
 
+        <!-- splide slide -->
+
+        <!-- <section class="splide" aria-label="Splide Basic HTML Example">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide"> <img src="images/guitar1.png" alt=""></li>
+              <li class="splide__slide"> <img src="images/guitar2.png" alt=""></li>
+              <li class="splide__slide"> <img src="images/guitar3.png" alt=""></li>
+            </ul>
+          </div>
+        </section> -->
+        
+        
+        
+
+        <!-- fetch -->
+
+        <section class="fetch_section">
+          <h3 class="load">load more music</h3>
+          <div id="api-users">
+              <ul id="ul-users"></ul>
+          </div>
+          <button id="btn-prev-users">load previous music</button>
+          <button id="btn-load-more">load next music</button>
+      </section>
+
+
+
+
+
+
+
+
         <!-- footer -->
 
         <footer>
@@ -162,6 +197,18 @@
           </footer>
     </div>
 
-    <script src="script.js"></script>
+
+    <div id="cookie-box" class="cookie-content">
+      <p>Your experience on this site will be improved by allowing cookies.
+       <a href="#" class="policy">Cookie Policy</a></p>
+     <div class="cookie-btns">
+     <div class="accept">Accept it</div>
+     <div class="decline">Decline</div>
+     </div>
+ </div>
+
+ <script src="./node_modules/axios/dist/axios.min.js"></script>
+
+    <script type="module" src="js/main.js"></script>
   </body>
 </html>

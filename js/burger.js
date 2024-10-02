@@ -1,3 +1,7 @@
+'use strict'
+
+export function burgerMenu (){
+
 let burger = document.querySelector(".fa-bars");
 let xMark = document.querySelector(".fa-xmark");
 let mobileMenu = document.querySelector(".header_nav");
@@ -13,3 +17,4 @@ xMark.addEventListener("click", ()=>{
     burger.style.display = "block";
     xMark.style.display = "none";
 });
+}

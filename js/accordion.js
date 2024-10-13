@@ -1,21 +1,22 @@
-'use strict'
+'use strict';
 
-export function accordion(){
+export function accordion() {
+  const acc = document.getElementsByClassName("accordion");
 
-let acc = document.getElementsByClassName("accordion");
-let i;
+  for (let i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      // Toggle the "active" class for the clicked element
+      this.classList.toggle("active1");
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-   
-    this.classList.toggle("active1");
+      // Select the panel related to the clicked accordion
+      const panel = this.nextElementSibling;
 
-   
-    let panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-  });
-}}
+      // Check the current display value and toggle it accordingly
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
+}

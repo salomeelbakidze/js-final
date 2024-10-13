@@ -251,7 +251,7 @@ footer {
   display: flex;
   gap: 24px;
 }
-h3 {
+.footer_text_head {
   font-family: Inter;
   font-size: 24px;
   font-weight: 400;
@@ -259,7 +259,7 @@ h3 {
   text-align: left;
   color: #d9d9d9;
 }
-p {
+.footer_text {
   font-family: Inter;
   font-size: 16px;
   font-weight: 400;
